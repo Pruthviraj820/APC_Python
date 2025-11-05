@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Page</title>
+  <style>
+   .B1{
+        background-color:blue
+   }
+   .change{
+    background-color: red;
+   }
+
+    </style>
+</head>
+<body>
+    
+    <button id="B1">One</button>
+    <button id="B1">Two</button>
+    <button id="B2">Three</button>
+
+  <script>
+   
+   document.querrySelectorAll("B1").forEach(function(button) {
+        button.addEventListener("click", function() {
+            this.classList.toggle("change");
+        });
+    });
+
+
+  </script>
+</body>
+</html>
