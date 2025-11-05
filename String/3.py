@@ -1,0 +1,6 @@
+a=(1,2,3)
+print(a)
+print(min(a))
+print(max(a))
+print(len(a))
+print(type(a))
